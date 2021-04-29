@@ -79,7 +79,30 @@
           + "Title 1 Status: " + row.title1_text + '</br>'
           + "Charter School: " + row.charterschoolyn + '</br>'
           + "Urban/Rural: " + row.urban + '</br>'
-          + "Has an SBHC currently= " + row.sbhc + '</br>' + '</br>');
+          + "Has an SBHC currently= " + row.sbhc + '</br>' + '</br>'
+          
+          + "'<b>'Need Indicators (California Averages in Parentheses): " + '</br>'
+          + "School-Level Indicators:" + '</br>'
+          + "Percent of Population Elligible for FRPL: " + row.percenteligiblefrpmk1 + row.ca_av_percenteligiblefrpmk1 + '</br>'
+          + "Percent of Population ELL: " + row.percent_el + row.ca_av_percent_el + '</br>'
+          + "Suspension Rate: " + row.suspensionratetotal + row.ca_av_suspensionratetotal + '</br>'
+          + "Chronic Absenteeism Rate: " + row.chronicabsenteeismrate + row.ca_av_chronicabsenteeismrate + '</br>'
+          + "Percent homeless: " + row.percenthomeless + row.ca_av_percenthomeless + '</br>'
+          + "Percent in foster care: " row.percentfoster + row.ca_av_percentfoster + '</br>'
+          + '</br>'
+          + "'<b>'Health Care Indicators: " + '</br>'
+          + "Emergency department visits for asthma per 10,000 people: " + row.asthmaer_rate + row.ca_av_asthmaer_rate + '</br>'
+          + "Diagnosed diabetes among adults over 18: " row.diabetes_crudeprev + row.ca_av_diabetes_crudeprev + '</br>'
+          + "Teen birth rate: " row.pct_teenbirth + row.ca_av_pct_teenbirth + '</br>'
+          + "County Mental Health Hospitalization Discharge Rate per 1,000 children: " + row.hosp_mentalhealth + row.ca_av_hosp_mentalhealth+ '</br>'
+          + "Primary Care Health Professional Shortage Area (HPSA)**: " + row.hpsa"/26" + row.ca_av_hpsa + '</br>' + '</br>'
+          + "'<b>' Socioeconomic Indicators: " + '</br>'
+          + "CA Healthy Places Index Score*: " + row.hpi_index+"/100" + row.ca_av_hpi_index + '</br>'
+          + "Uninsured rate among under 19: " row.pct_uninsured_under19" + row.ca_av_pct_uninsured_under19 + '</br>'
+          + "Poverty rate among under 18: " + row.pct_poverty_under18 + row.ca_av_pct_poverty_under18 + '</br>' + '</br>'
+
+          "*Percentile score where higher percentile indicates more healthy neighborhood conditions based on 25 community charecteristics." + '</br>'
+          "**Score indicates shortage of primary care providers and priority for assignment of clinicians (0 to 26 where the higher the score, the greater the priority)");
 
       marker.addTo(map);
     }
