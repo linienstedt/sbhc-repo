@@ -69,7 +69,10 @@
 
       var marker = L.marker([row.latitude, row.longitude], {
         opacity: 1,
-        iconSize: [10, 10]
+          icon: L.icon({
+            iconUrl: 'icon.png',
+            iconSize: [10, 10]
+          })
       }).bindPopup(row.school + '</br>'  
           + "Need Score: " + row.need_text + '</br>'
           + "School Type: " + row.eilname + '</br>'
