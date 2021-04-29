@@ -68,7 +68,8 @@
       var row = data[i];
 
       var marker = L.marker([row.latitude, row.longitude], {
-        opacity: 1
+        opacity: 1,
+        iconSize: [10, 10]
       }).bindPopup(row.school + '</br>'  
           + "Need Score: " + row.need_text + '</br>'
           + "School Type: " + row.eilname + '</br>'
