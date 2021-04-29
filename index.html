@@ -66,8 +66,8 @@
     // For each row in data, create a marker and add it to the map
     // For each row, columns `Latitude`, `Longitude`, and `Title` are required
     for (var i in data) {
+      if (data[i].need_text = "Highest Need") {
       var row = data[i];
-      if (row.need_text = "Highest Need") {
       var marker = L.marker([row.latitude, row.longitude], {
         opacity: 1,
           icon: L.icon({
@@ -113,6 +113,7 @@
       }
     }
       else {
+      var row = data[i];
       var marker = L.marker([row.latitude, row.longitude], {
         opacity: 1,
           icon: L.icon({
